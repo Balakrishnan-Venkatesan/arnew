@@ -28,11 +28,5 @@ class collection {
         return $recordsSet;
     }
 }
-class accounts extends collection {
-    public static $modelName = 'account';
-}
-class todos extends collection {
-    public static $modelName = 'todo';
-}
 
 ?>
