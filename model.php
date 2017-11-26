@@ -54,33 +54,5 @@ class model {
         return $head;
     }
 }
-class account extends model {
-    public $id;
-    public $email;
-    public $fname;
-    public $lname;
-    public $phone;
-    public $birthday;
-    public $gender;
-    public $password;
-    public function __construct()
-    {
-        $this->tableName = 'accounts';
-    }
-}
-class todo extends model {
-    public $id;
-    public $owneremail;
-    public $ownerid;
-    public $createddate;
-    public $duedate;
-    public $message;
-    public $isdone;
-    public function __construct()
-    {
-        $this->tableName = 'todos';
-
-    }
-}
 
 ?>
