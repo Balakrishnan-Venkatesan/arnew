@@ -1,6 +1,6 @@
 <?php
 
-class collection {
+ abstract class collection {
     static public function create() {
         $model = new static::$modelName;
         return $model;
@@ -28,5 +28,4 @@ class collection {
         return $recordsSet;
     }
 }
-
 ?>
