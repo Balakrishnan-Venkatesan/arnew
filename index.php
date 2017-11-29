@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 class Manage {
     public static function autoload($class) {
-        include $class . '.php';
+        include str_replace('\\', '/', $class . '.php');
     }
 }
 spl_autoload_register(array('Manage', 'autoload'));
