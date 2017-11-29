@@ -1,5 +1,7 @@
 <?php
 
+namespace classes;
+
 abstract class model {
     protected $tableName;
     public function save() {
@@ -50,7 +52,7 @@ abstract class model {
         $sql = 'SHOW COLUMNS FROM ' . $tableName;
         $statement = $db->prepare($sql);
         $statement->execute();
-        $head = $statement->fetchAll(PDO::FETCH_COLUMN);
+        $head = $statement->fetchAll(\PDO::FETCH_COLUMN);
         return $head;
     }
 }
