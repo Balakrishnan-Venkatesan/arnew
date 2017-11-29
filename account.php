@@ -1,5 +1,7 @@
 <?php
 
+use classes\model;
+
 class account extends model {
     public $id;
     public $email;
